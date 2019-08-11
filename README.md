@@ -2,7 +2,7 @@
 
 configuration.xml ::        file here is used for weblogic deployer plugin provided in Jenkins.
 
-Dockerfile ::               is used to create image of jenkins:2.176 of size  1.53GB which includes all possible plugins along with                                   jenkins as an additonal user.
+Dockerfile ::               is used to create image of jenkins:2.176 of size  1.48GB which includes all possible plugins along with                                   jenkins as an additonal user.
 
 build docker image using :: docker build -t jenkins:2.176 .
 
