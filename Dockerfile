@@ -16,6 +16,8 @@ COPY jenkins.war jdk1.8.0_211.tar plugins.tar users.tar /software/jenkins/
 # this will install JDK which will be used to run jenkins.war file
 RUN yum install tar -y && \
     \
+    yum -y clean all && \ 
+    \
     tar -xpf jdk1.8.0_211.tar && \
     \
     mkdir /root/.jenkins/
