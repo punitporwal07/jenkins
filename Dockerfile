@@ -10,10 +10,12 @@ Maintainer Punit <punitporwal07@gmail.com>
 WORKDIR /software/jenkins/
 
 # the tar/war files should be available at your local directory
-#
+# get the correct version of JAVA & Jenkins as per your requirement to your local directory
+
 COPY jenkins.war jdk1.8.0_211.tar plugins.tar users.tar /software/jenkins/
 #
 # this will install JDK which will be used to run jenkins.war file
+
 RUN yum install tar -y && \
     \
     yum -y clean all && \ 
@@ -32,3 +34,5 @@ EXPOSE 8080
 WORKDIR /software/jenkins/
 
 ENTRYPOINT /software/jenkins/jdk1.8.0_211/bin/java -jar jenkins.war
+
+# end of file
