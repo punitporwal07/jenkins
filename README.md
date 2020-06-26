@@ -9,3 +9,10 @@ build docker image using :: docker build -t jenkins:2.176 .
 hold Jenkins data via ::    docker volume create jenkins_data ( which will hold your jenkins data under /var/lib/docker/volume/ )
 
 run docker image using ::   docker run -it -p 9090:8080 -v jenkins_data:/root/.jenkins/ jenkins:2.176
+
+##
+To use this Dockerfile you need to add following with it:
+jdk1.8.0_211.tar
+jenkins.war
+plugins.tar
+users.tar
