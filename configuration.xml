@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://org.jenkinsci.plugins/WeblogicDeploymentPlugin"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://org.jenkinsci.plugins/WeblogicDeploymentPlugin plugin-configuration.xsd">
+<weblogic-targets>
+    <weblogic-target>
+        <name>adminServer</name>
+        <host>192.168.0.101</host>
+        <port>61001</port>
+        <login>weblogic</login>
+        <password>weblogic1</password>
+        <authMode>BY_LOGIN</authMode>
+        <userconfigfile>P:\Documents\perso\dev\wls-deploy-plugin\wls_userConfig.properties</userconfigfile>
+        <userkeyfile>P:\Documents\perso\dev\wls-deploy-plugin\wls_userConfig.key</userkeyfile>
+        <!-- used to transfer by FTP the component flagged as library to the WL machine -->
+        <ftpHost>_weblogic.remote.host_</ftpHost>
+        <ftpUser>_weblogic.remote.user_</ftpUser>
+        <ftpPassowrd>_weblogic.remote.password_</ftpPassowrd>
+        <remoteDir>/remote/path/used/to/transfer/libraries</remoteDir>
+    </weblogic-target>
+</weblogic-targets>
+</config>
